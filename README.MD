@@ -74,7 +74,7 @@ def make_tar_file(dir_name='.', target_file_name='workspace_archive.tar', ignore
 dir_name = '.'
 target_file_name = 'workspace_archive.tar'
 # List of files/directories to ignore
-ignore = {'.ipynb_checkpoints', '__pycache__', target_file_name}
+ignore = {'.ipynb_checkpoints', '__pycache__', 'node_modules', target_file_name}
 
 make_tar_file(dir_name, target_file_name, ignore)
 ```
